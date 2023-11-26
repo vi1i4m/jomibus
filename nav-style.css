@@ -1,4 +1,6 @@
 .pa-fixed-header {
+	position: fixed!important;
+	top: 0!important;
 	background-color: #ffffff !important;
 	-webkit-transition: background-color 1s ease-out;
 	-moz-transition: background-color 1s ease-out;
