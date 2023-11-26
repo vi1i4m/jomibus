@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Gothic', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* NAV */
+
+nav{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+nav > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    gap: 1.5rem;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover{
+    color: #507DBC!important;
+    transition: 0.3s ease-out;
+    text-decoration: none !important;
+}
+
+/* /NAV */
+
+/* DOMOV */
+
+#domov{
+    min-height: 100vh;
+    background-image: url(images/home.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1{
+    font-size: 8rem;
+    color: #507DBC;
+}
+
+h3{
+    font-size: 5.5rem;
+    color: #ffffff87;
+}
+
+/* /DOMOV */
+
+/* O NAS */
+
+#onas{
+    height: auto;
+    background-color: #DAE3E5 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nadpis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 9rem;
+    text-align: center;
+}
+
+.nadpis h4, .nadpis span{
+    font-size: 4rem;
+}
+.nadpis span{
+    color: #507DBC;
+}
+
+.cards > img{
+    width: 350px;
+    height: calc(700px / 1.5);
+    border-radius: 35px;
+    -webkit-box-shadow: 0px 0px 59px -18px rgba(0,0,0,0.68);
+    -moz-box-shadow: 0px 0px 59px -18px rgba(0,0,0,0.68);
+    box-shadow: 0px 0px 59px -18px rgba(0,0,0,0.68);
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1150px;
+    gap: 50px;
+    margin-bottom: 5rem;
+}
+
+.card-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card{
+    padding: 2rem;
+    gap: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #507DBC;
+    border-radius: 35px;
+    height: calc(700px / 1.5);
+    width: 350px;
+    -webkit-box-shadow: 0px 0px 59px -18px rgba(0,0,0,0.68);
+    -moz-box-shadow: 0px 0px 59px -18px rgba(0,0,0,0.68);
+    box-shadow: 0px 0px 59px -18px rgba(0,0,0,0.68);
+}
+
+.card > span{
+    font-size: 1.8rem;
+    text-align: center;
+    color: #5E5D5D;
+}
+
+.card h6{
+    font-size: 2.3rem;
+    text-align: center;
+}
+/* /O NAS */
+
+/* H5 */
+
+h5 {
+    font-size: 3.5rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #507DBC;
+}
+
+h5:before,
+h5:after {
+    content: '';
+    border-top: 5px solid #507DBC;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+h5:after {
+    margin: 0 0 0 20px;
+}
+
+/* /H5 */
+
+/* GALÉRIA */
+
+#galeria{
+    height: 100vh;
+    padding-top: 9rem;
+}
+
+/* /GALÉRIA */
+
+/* VYBAVENIE */
+
+#vybavenie{
+    padding-top: 9rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20vh;
+    margin-bottom: 8rem;
+}
+
+
+.cards-v{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    max-width: 96.875rem;
+    /* padding-bottom: 9rem; */
+}
+
+.card-v{
+    border: 2px solid #507DBC;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 35px;
+    -webkit-box-shadow: 0px 0px 59px -18px rgba(0,0,0,0.68);
+    -moz-box-shadow: 0px 0px 59px -18px rgba(0,0,0,0.68);
+    box-shadow: 0px 0px 59px -18px rgba(0,0,0,0.68);
+}
+
+.card-v h6{
+    font-size: 2.3rem;
+}
+
+
+/* /VYBAVENIE */
+
+/* KONTAKT */
+
+#kontakt{
+    min-height: 100vh;
+    padding-top: 9rem;
+}
+
+/* /KONTAKT */
+
+/* PORIADOK */
+
+#poriadok{
+    height: calc(75vh - 9rem);
+}
+
+.poriadok-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3.5rem;
+    font-size: 2.5rem;
+}
+
+.poriadok-box span{
+    color: #5E5D5D;
+}
+
+/* /PORIADOK */
+
+/* FOOTER */
+footer{
+    height: 25vh;
+    background-color: #04080F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span{
+    color: white;
+    font-size: 1.5rem;
+}
+/* /FOOTER */
+
+
+@media (-webkit-device-pixel-ratio: 1.25) {
+    * {
+      zoom: 0.8;
+    }
+  }

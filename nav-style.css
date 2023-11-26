@@ -1,0 +1,14 @@
+.pa-fixed-header {
+	background-color: #ffffff !important;
+	-webkit-transition: background-color 1s ease-out;
+	-moz-transition: background-color 1s ease-out;
+	-o-transition: background-color 1s ease-out;
+	transition: background-color 1s ease-out;
+    box-shadow: 1px -1px 67px -9px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 1px -1px 67px -9px rgba(0,0,0,0.48);
+    -moz-box-shadow: 1px -1px 67px -9px rgba(0,0,0,0.48);
+}
+
+.text-black{
+    color: #04080F !important;    
+}
