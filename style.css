@@ -233,7 +233,7 @@ h5:after {
 	width: 70rem;
 }
 
-figure {
+.gallery-box figure {
 	margin: 0;
 	position: relative;
 	overflow: hidden;
@@ -244,7 +244,7 @@ figure {
     box-shadow: 28px 32px 62px -37px rgba(0,0,0,0.75);
 }
 
-figure::after {
+.gallery-box figure::after {
 	content: '';
 	position: absolute;
 	top: 50%;
@@ -258,7 +258,7 @@ figure::after {
 	transition: opacity 300ms;
 }
 
-figcaption {
+.gallery-box span {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -280,17 +280,17 @@ figcaption {
 	opacity: 1;
 }
 
-.gallery-box a:is(:hover) figcaption {
+.gallery-box a:is(:hover) span {
 	opacity: 1;
 	transition: opacity 600ms;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-	figcaption {
+	.gallery-box span {
 		transform: translate3d(0, 2rem, 0);
 	}
 	
-	figure::after {
+	.gallery-box figure::after {
 		border-radius: 50%;
 		opacity: 1;
 		transform: scale(0);
@@ -301,7 +301,7 @@ figcaption {
 		transform: scale(2.5);
 	}
 
-	.gallery-box a:is(:hover) figcaption {
+	.gallery-box a:is(:hover) span {
 		opacity: 1;
 		transform: translate3d(0, 0, 0);
 		transition: opacity 600ms 400ms, transform 600ms 400ms;
