@@ -7,3 +7,7 @@ function myFunction() {
       x.className = "topnav";
     }
   }
+
+  function hambur(x) {
+    x.classList.toggle("change");
+  }

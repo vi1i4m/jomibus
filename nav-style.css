@@ -14,3 +14,7 @@
 .text-black{
     color: #04080F !important;    
 }
+
+.stroke-black{
+	background-color: #04080F!important;
+}

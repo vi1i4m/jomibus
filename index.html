@@ -6,11 +6,18 @@
     <title>JOMIBUS</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav-style.css">
+    <link rel="stylesheet" href="hamb.css">
+    <link rel="stylesheet" href="zlomy.css">
 </head>
 <body>
     
     <nav id="navBar">
         <a class="nav-logo" href="#domov">JOMIBUS</a>
+        <div class="container" onclick="hambur(this)">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+          </div>
         <ul>
             <li class="nav-link"> <a href="#domov">DOMOV</a></li>
             <li class="nav-link"> <a href="#onas">O NÁS</a></li>
@@ -180,8 +187,8 @@
             </div>
 
             <form action="https://formsubmit.co/viliamboris06@gmail.com" method="POST" >
-                <input type="text" placeholder="Meno*" required maxlength="30">
-                <input type="email" placeholder="E-mail*" required max="40">
+                <input type="text" placeholder="Meno*" required maxlength="30" class="meno">
+                <input type="email" placeholder="E-mail*" required max="40" class="email">
                 <input type="text" placeholder="Predmet*" class="predmet" required maxlength="40">
                 <textarea cols="30" rows="10" style="resize: none;" placeholder="Správa*" required maxlength="1024"></textarea>
                 <input type="submit">

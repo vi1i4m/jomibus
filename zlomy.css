@@ -1,0 +1,155 @@
+@media only screen and (max-width:1060px) {
+    #navBar .container{
+        display: inline-block;
+    }
+
+    #navBar ul{
+        display: none;
+    }
+
+    #navBar{
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width:1060px){
+    h1{
+        font-size: 3rem;
+    }
+
+    h3{
+        font-size: 3.5rem;
+    }
+
+    .nadpis h4, .nadpis span{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .nadpis{
+        padding: 9rem 5rem;
+    }
+
+    .contact_card{
+        margin: 1rem;
+    }
+
+    form{
+        grid-template-columns: 15rem 15rem;
+    }
+
+
+
+    .contact_head span{
+        text-align: center;
+    }
+
+    .contact_head b{
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact_row img, .contact_row_phone img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .contact_row span, .contact_row_phone span{
+        font-size: 1.5rem;
+    }
+
+    .contact_row span.last, .contact_row_phone span.item1, .contact_row_phone span.item2{
+        font-size: 1.4rem;
+    
+}
+}
+
+@media only screen and (max-width:505px){
+    h1{
+        font-size: 2.5rem;
+    }
+
+    h3{
+        font-size: 3rem;
+    }
+
+    .nadpis h4, .nadpis span{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .nadpis{
+        padding: 9rem 5rem;
+    }
+    
+    
+    
+    
+    form{
+        grid-template-columns: 19rem;
+    }
+
+    form .meno{
+        grid-row: 1/1;
+        grid-column: 1 / span 2;
+    }
+
+    form .email{
+        grid-row: 2/2;
+        grid-column: 1 / span 2;
+    }
+
+    textarea{
+        grid-row: 4 / 4;
+    }
+    
+    input[type='submit']{
+        grid-row: 5 / 5;
+    }
+    
+    
+    .predmet{
+        grid-row: 3/3;
+    }
+
+    .card-v{
+        margin: 1rem;
+    }
+
+
+
+    .contact_head span{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .contact_head b{
+        font-size: 1.2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact_row img, .contact_row_phone img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .contact_row span, .contact_row_phone span{
+        font-size: 1.3rem;
+    }
+
+    .contact_row span.last, .contact_row_phone span.item1, .contact_row_phone span.item2{
+        font-size: 1.2rem;
+    }
+
+
+    .poriadok-box{
+        font-size: 1.7rem;
+    }
+
+    footer span{
+        font-size: 1rem;
+    }
+}
+
+
