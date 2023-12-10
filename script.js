@@ -11,7 +11,6 @@ scrollNavbar = () => {
 
   if (document.documentElement.scrollTop > 100) {
     navBar.classList.add("pa-fixed-header");
-    // hamb.classList.add("stroke-black");
 
     for (let i = 0; i < links.length; i++) {
         const element = links[i];
