@@ -70,7 +70,7 @@
     }
 
     h3{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .nadpis h4, .nadpis span{
@@ -143,8 +143,12 @@
     }
 
 
+    #poriadok h5{
+        font-size: 3rem;
+    }
+
     .poriadok-box{
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 
     footer span{
@@ -152,4 +156,27 @@
     }
 }
 
+@media only screen and (max-width:400px){
+    .poriadok-box{
+        padding: 5rem 2rem;
+    }
 
+    #poriadok h5{
+        font-size: 2.5rem;
+    }
+
+    .card-v{
+        margin: 1rem 0;
+        height: 320px;
+        width: 320px;
+    }
+
+    .card-v img{
+        height: 80px;
+        width: 80px;
+    }
+
+    .card-v h6{
+        font-size: 1.9rem;
+    }
+}

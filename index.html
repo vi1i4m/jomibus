@@ -11,22 +11,35 @@
 </head>
 <body>
     
-    <nav id="navBar">
-        <a class="nav-logo" href="#domov">JOMIBUS</a>
-        <div class="container" onclick="hambur(this)">
-            <div class="bar bar1"></div>
-            <div class="bar bar2"></div>
-            <div class="bar bar3"></div>
-          </div>
-        <ul>
-            <li class="nav-link"> <a href="#domov">DOMOV</a></li>
-            <li class="nav-link"> <a href="#onas">O NÁS</a></li>
-            <li class="nav-link"> <a href="#galeria">GALÉRIA</a></li>
-            <li class="nav-link"> <a href="#vybavenie">VYBAVENIE</a></li>
-            <li class="nav-link"> <a href="#kontakt">KONTAKT</a></li>
-            <li class="nav-link"> <a href="#poriadok">PREPRAVNÝ PORIADOK</a></li>
-        </ul>
-    </nav>
+    <header>
+
+        <nav id="navBar">
+            <a class="nav-logo" href="#domov">JOMIBUS</a>
+            <div class="container" onclick="hambur(this), open_close()" id="cont">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+              </div>
+            <ul>
+                <li class="nav-link"> <a href="#domov">DOMOV</a></li>
+                <li class="nav-link"> <a href="#onas">O NÁS</a></li>
+                <li class="nav-link"> <a href="#galeria">GALÉRIA</a></li>
+                <li class="nav-link"> <a href="#vybavenie">VYBAVENIE</a></li>
+                <li class="nav-link"> <a href="#kontakt">KONTAKT</a></li>
+                <li class="nav-link"> <a href="#poriadok">PREPRAVNÝ PORIADOK</a></li>
+            </ul>
+        </nav>
+        <div id="hamb-nav">
+            <ul>
+                <li class="hamb-link"  onclick="zavri()"> <a href="#domov">DOMOV</a></li>
+                <li class="hamb-link"  onclick="zavri()"> <a href="#onas">O NÁS</a></li>
+                <li class="hamb-link"  onclick="zavri()"> <a href="#galeria">GALÉRIA</a></li>
+                <li class="hamb-link"  onclick="zavri()"> <a href="#vybavenie">VYBAVENIE</a></li>
+                <li class="hamb-link"  onclick="zavri()"> <a href="#kontakt">KONTAKT</a></li>
+                <li class="hamb-link"  onclick="zavri()"> <a href="#poriadok">PREPRAVNÝ PORIADOK</a></li>
+            </ul>
+        </div>
+    </header>
 
     <div id="domov">
         <h1>JOMI - JOZEF ŠAK</h1>
