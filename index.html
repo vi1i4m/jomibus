@@ -199,11 +199,13 @@
             </div>
 
             <form action="https://formsubmit.co/viliamboris06@gmail.com" method="POST" >
-                <input type="text" placeholder="Meno*" required maxlength="30" class="meno">
-                <input type="email" placeholder="E-mail*" required max="40" class="email">
+                <input type="hidden" name="_subject" value="jomibus.sk - Nová správa">
+                <input type="text" placeholder="Meno*" required maxlength="30" class="meno" name="name">
+                <input type="email" placeholder="E-mail*" required max="40" class="email" name="email">
                 <input type="text" placeholder="Predmet*" class="predmet" required maxlength="40">
                 <textarea cols="30" rows="10" style="resize: none;" placeholder="Správa*" required maxlength="1024"></textarea>
                 <input type="submit">
+                <input type="hidden" name="_captcha" value="false">
             </form>
         </div>
 

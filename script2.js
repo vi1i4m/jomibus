@@ -7,22 +7,41 @@ function hambur(x) {
 function open_close(){
   var hamb_nav = document.getElementById('hamb-nav');
   const links2 = document.querySelectorAll("#navBar div .bar");
-  const links = document.querySelectorAll("#navBar a");
+  const links = document.querySelectorAll("header #navBar a");
 
   if (hamb_nav.style.display === 'block'){
     hamb_nav.style.display = 'none';
+    if(document.documentElement.scrollTop > 100){
+      document.body.classList.add('stop-scrolling');
     
-    navBar.classList.remove("pa-fixed-header");
-    for (let i = 0; i < links2.length; i++) {
-      const element2 = links2[i];
-      element2.classList.remove('stroke-black');
+  
+    navBar.classList.add("pa-fixed-header");
+
+      for (let i = 0; i < links.length; i++) {
+          const element = links[i];
+          element.classList.add('text-black');
+      }
+
+      for (let i = 0; i < links2.length; i++) {
+        const element2 = links2[i];
+        element2.classList.add('stroke-black');
+    }
+    }
+    else{
+      navBar.classList.remove("pa-fixed-header");
+      for (let i = 0; i < links2.length; i++) {
+        const element2 = links2[i];
+        element2.classList.remove('stroke-black');
+        for (let i = 0; i < links.length; i++) {
+          const element = links[i];
+          element.classList.remove('text-black');
+      }
+      document.body.classList.remove('stop-scrolling');
+    }
+    
   }
 
-    for (let i = 0; i < links.length; i++) {
-        const element = links[i];
-        element.classList.remove('text-black');
-    }
-    document.body.classList.remove('stop-scrolling');
+    
   }
   
   else{
