@@ -12,7 +12,7 @@ function open_close(){
   if (hamb_nav.style.display === 'block'){
     hamb_nav.style.display = 'none';
     if(document.documentElement.scrollTop > 100){
-      document.body.classList.add('stop-scrolling');
+      document.body.classList.remove('stop-scrolling');
     
   
     navBar.classList.add("pa-fixed-header");
@@ -35,8 +35,8 @@ function open_close(){
         for (let i = 0; i < links.length; i++) {
           const element = links[i];
           element.classList.remove('text-black');
+          document.body.classList.remove('stop-scrolling');
       }
-      document.body.classList.remove('stop-scrolling');
     }
     
   }
